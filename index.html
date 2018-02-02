@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tintin: Around the world in 24 years</title>
+		<link href="https://fonts.googleapis.com/css?family=Neucha&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+		<link rel="stylesheet" type="text/css" href="./style.css"/>
+		<link rel="icon" href="./images/favicon.ico">
+		
+	</head>
+	<body>
+		<div class="mainContainer">
+			<h1>&Egrave;</h1>
+			<div class="sectionMainCont">
+				<section class="mapCont">
+					<img src="./images/map.png" alt="">
+				</section>
+				<section>
+					<div class="flexCont">
+						<div class="imgHeader active">
+							<div class="imgCont">
+								<img class="selected" src="./images/fact_r.png" alt=""><img class="unsel" src="./images/fact_w.png" alt="">
+							</div>
+						</div>
+						<div class="imgHeader">
+							<div class="imgCont">
+								<img class="selected" src="./images/fact_r.png" alt=""><img class="unsel" src="./images/fact_w.png" alt="">
+							</div>
+						</div>
+						<div class="imgHeader">
+							<div class="imgCont">
+								<img class="selected" src="./images/fact_r.png" alt=""><img class="unsel" src="./images/fact_w.png" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="factsContainer">
+						<div class="flexCont container container1">
+							<div class="text-right">
+								<p>Date :</p>
+								<p>Publisher :</p>
+								<p>Creator :</p>
+								<p>Language :</p>
+							</div>
+							<div class="text-left">
+								<p>5 June 1930 – 11 June 1931</p>
+								<p>Le Petit Vingtième</p>
+								<p>Hergé</p>
+								<p>French</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div class="comicTitle"><span>1924:</span> Tintin in the Land of the Soviets</div>
+				</section>
+				<section  class="vidSlideSection  flexCont fullWidth pad0" >
+
+					<div class="slider-for videSliderCont">
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+						<div class="eachSliderMain"><div class="imgCont"><img src="./images/cover.jpg" alt=""></div></div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./slick/slick.min.js"></script>
+		<script>
+			//var myAudio = document.getElementById("myAudio");
+			var bodH = $('body').height();
+			var winH = $(window).height();
+			var winW = $(window).width();
+			$(document).ready(function() {
+				$('.imgHeader').on('click', function(event) {
+					$(this).siblings('.active').removeClass('active');
+					$(this).addClass('active');
+					// var selImg = $(this).children('.selected');
+					// var unselImg = $(this).children('.unsel');
+					// selImg.removeClass('selected').addClass('unsel');
+					// unselImg.removeClass('unsel').addClass('selected');
+				});
+				// $('.slider-for').on('init', function(event, slick){
+				// 	$('eachSliderMain').addClass('op1');
+				// 	$('.leadLeft').addClass('activateFade');
+				// });
+
+				// $('.slider-for').slick({
+				// 	prevArrow:"<img class='a-left control-c prev slick-prev' src='./images/arrow_Backward.png'>",
+				// 	nextArrow:"<img class='a-right control-c next slick-next' src='./images/arrow_forward.png'>",
+				// 	//centerMode: true,
+				// 	centerPadding: '100px',
+				// 	slidesToShow:3.4,
+				// 	slidesToSlide:1,
+				// 	infinite: false,
+				// 	dots: true,
+				// 	// fade: true
+				// });
+				// $(".slider-for").on('afterChange', function(event, slick, currentSlide){
+				// 	var sld = $(slick.$slides[currentSlide]);
+				// 	var contId = sld.attr('id');
+				// 	var sliId = contId.split('slick-slide');
+				// 	console.log(parseInt(sliId[1]));
+					
+				// });
+			});
+		</script>
+	</body>
+</html>
