@@ -84,8 +84,18 @@ section{
 	transform: scale(1.1);
 	opacity: 1;
 }
-.factsContainer{
+.factsContainer,.synpsContainer{
 	margin: 25px 0;
+	color: #000106;
+	font-size: 16px;
+	display: none;
+	opacity: 0;
+	transition-delay: 1s;
+	transition: all 0.4s ease-in-out;
+}
+.factsContainer.active,.synpsContainer.active{
+	display: block;
+	opacity: 1;
 }
 .factsContainer .flexCont{
 	justify-content: center;
@@ -97,11 +107,66 @@ section{
 .mapCont img{
 	width: 100%;
 }
+section.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    transition: all 0.4s ease;
+    z-index: 100;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header img{
+	height: 16px;
+}
+.header img.pull-right{
+	opacity: 0.7;
+}
+.pull-right{
+	float: right;
+}
+.belowHeader{
+	margin: 0;
+	margin-top: 35px;
+	position: relative;
+	box-sizing: border-box;
+	
+}
+.belowHeader:before{
+	content: " ";
+	position: absolute;
+	height: 20px;
+	width: 100%;
+	display: block;
+	background: #ef4d25;
+	z-index: -1;
 
+}
 
-
-
-
+span.tintinMainImgCont {
+    position: absolute;
+    height: 60px;
+    left: 50px;
+    top: 0;
+    transform: translateY(-30%);
+}
+span.tintinMainImgCont img{
+	max-height: 60px;
+}
+.tintinMainTextCont{
+	text-align: center;
+	line-height: 20px;
+}
+.tintinMainTextCont span{display: block;padding-top: 3px;}
+.tintinMainTextCont span:last-child{
+	display: block;
+	font-size: 40px;
+	line-height: 1;
+}
 
 
 
